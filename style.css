@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #222;
+}
+
+.card {
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    margin: 100px auto 0; /* ขอบบน ขอบซ้ายขวา ขอบล่าง */
+    border-radius: 20px;
+    padding: 40px 35px; /* บนล่าง ซ้ายขวา */
+    text-align: center;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* ให้ input กับ button ชิดขอบคนละข้าง */
+}
+
+.search input {
+    border: 0px;
+    outline: 0;
+    background-color: #fff;
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1; /* ทำให้ input ใหญ่เต็มขนาด */
+    margin-right: 16px;
+    font-size: 18px;
+}
+
+.search button {
+    border: 0px;
+    outline: 0;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.weather-icon {
+    width: 170px;
+    margin: 30px auto;
+}
+
+.weather h1 {
+    font-size: 70px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.weather h2 {
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.humidity, .wind {
+    font-size: 20px;
+    margin-top: -5px;
+    margin-bottom: 5px;
+}
+
+.weather {
+    display: none; /* ถ้ายังไม่ใส่ city ให้มันไม่ต้องโชว์อะไร */
+}
+
+.error { /* สำหรับเวลา error หา city ไม่เจอ */
+    display: none;
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+}
